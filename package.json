@@ -3,6 +3,11 @@
 	"displayName": "Hosts Helper",
 	"description": "",
 	"version": "0.0.1",
+	"publisher": "Namal",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/NamalD/hosts-helper"
+	},
 	"engines": {
 		"vscode": "^1.47.0"
 	},
