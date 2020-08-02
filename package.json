@@ -17,9 +17,19 @@
 		"commands": [
 			{
 				"command": "hosts-helper.helloWorld",
-				"title": "Hello World"
+				"title": "Open hosts file"
 			}
-		]
+		],
+		"configuration": {
+			"title": "Host Helper",
+			"properties": {
+				"hostHelper.path": {
+					"type": "string",
+					"default": "C:\\Windows\\System32\\drivers\\etc\\hosts",
+					"description": "Path to hosts file"
+				}
+			}
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
