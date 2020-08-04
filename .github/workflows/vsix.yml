@@ -5,7 +5,7 @@ on:
     tags: 'v*'
 
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
     
     steps:
@@ -41,3 +41,4 @@ jobs:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: ./hosts-helper-{{ github.ref }}.vsix
         asset_name: hosts-helper-{{ github.ref}}.vsix
+        asset_content_type: application/vsix
