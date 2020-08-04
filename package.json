@@ -2,7 +2,7 @@
 	"name": "hosts-helper",
 	"displayName": "Hosts Helper",
 	"description": "",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"publisher": "Namal",
 	"repository": {
 		"type": "git",
