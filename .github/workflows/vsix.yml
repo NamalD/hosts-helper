@@ -3,14 +3,29 @@ name: Release VSIX
 on:
   push:
     branches: [ master ]
+    tags: 'v*'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v2
-    - run: npm install
-    - uses: lannonbr/vsce-action@master
+    - name: Checkout code
+      uses: actions/checkout@v2
+    
+    - name: Clean install NPM packages
+      run: npm ci
+      
+    - name: Install VS Code extension tool
+      run: npm install -g vsce
+    
+    - name: Package extension
+      run: vsce package
+    
+    - name: Create Release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        args: "package"
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
