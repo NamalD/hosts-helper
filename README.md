@@ -1,5 +1,3 @@
-# Hosts Helper
-
 ![Hosts Helper logo](resources/logo.svg)
 
 Helper for host files. Provides commands to:
