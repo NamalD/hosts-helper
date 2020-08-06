@@ -4,7 +4,7 @@
 	"description": "",
 	"version": "0.0.7",
 	"publisher": "Namal",
-  "icon": "resources/logo-256px.png",
+	"icon": "resources/logo-256px.png",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/NamalD/hosts-helper"

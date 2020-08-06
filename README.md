@@ -1,6 +1,6 @@
 # Hosts Helper
 
-<img src="./resources/logo.svg" width=250 />
+![Host Helper logo](resources/logo-256px.png)
 
 Helper for host files. Provides commands to:
 
