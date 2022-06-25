@@ -2,7 +2,7 @@
 	"name": "hosts-helper",
 	"displayName": "Hosts Helper",
 	"description": "",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"publisher": "Namal",
 	"icon": "resources/logo-256px.png",
 	"repository": {
